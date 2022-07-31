@@ -1,0 +1,12 @@
+{
+  "name": "algorithm_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "leetcode.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Jesse_Hall",
+  "license": "ISC"
+
+}
