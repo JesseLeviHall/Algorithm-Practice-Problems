@@ -10,3 +10,5 @@ The logarithm of a number (usually log2 as log) roughly measures the number of t
 Shows up in search algorithms, sorting, recursion sometimes involves logarithmic space complexity (not time).
 
 */
+
+const big0 = "o(n)";
