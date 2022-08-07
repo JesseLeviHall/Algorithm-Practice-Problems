@@ -75,4 +75,14 @@ General Termenology:
 
 - predicate: function that returns boolean true or false. often 
   start with is. 
+
+- memoization: Cache the return value of a function. 
+  const memoizedValue =  useMemo(() => computeExpensiveValue(a,b), [a,b]); Allows to recompute something without recalculating every value over again. 
+
+- abstraction: dont repeat yourself. 
+  Write code to not do things over and over.  
+
+- serializtion: 
+  ex: serialize data as a JSON string in order for a javascript app to send data to be understood by a python app. 
+
 */
