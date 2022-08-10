@@ -40,7 +40,6 @@ Implement a function called countUniqueValues, which accepts a sorted array, and
 */
 
 // Solution: O(N)
-
 function countUniqueValues(arr) {
   if (arr.length === 0) return 0;
   var i = 0;
