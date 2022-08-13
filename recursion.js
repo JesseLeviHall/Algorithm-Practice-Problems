@@ -112,3 +112,6 @@ with objects, make copies using Object.assign, or the spread operator.
 //recusive pracitce problems:
 
 1;
+
+2;
+//factorial
