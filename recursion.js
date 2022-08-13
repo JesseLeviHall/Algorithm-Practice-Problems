@@ -21,6 +21,8 @@ the two essential parts of a recursive function:
 
 */
 
+const { ReverseSubtractEquation } = require("three");
+
 //facrotial iteravely:
 /*
 function factorialLoop(num) {
@@ -148,4 +150,13 @@ function fib(number) {
  if (number <= 2) return 1;
     return fib(number-1) + fib(number-2);
 }
+*/
+
+/* 
+Write a recursive function called reverse which accepts a string and returns a new string in reverse.
+function reverse(string) {
+  if (string.length <= 1) return string;
+  return reverse(string.slice(1)) + string[0];
+}
+console.log(reverse("hola"));
 */
