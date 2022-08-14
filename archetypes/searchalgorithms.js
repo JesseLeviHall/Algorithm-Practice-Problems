@@ -15,7 +15,7 @@ function search(arr, val) {
   }
   return -1;
 }
-*/
+
 
 //Refactor Solution: Log(N) - Binary Search
 function search(array, val) {
@@ -35,3 +35,22 @@ function search(array, val) {
   return array[middle] === val ? middle : -1;
 }
 console.log(search([1, 2, 3, 4, 5, 6, 4, 9, 7, 57, 3, 8], 2));
+*/
+
+/*
+String Search
+function naiveSearch(long, short) {
+  var count = 0
+  for(var i =0; i < long.length; i++) {
+    for(var j = 0; j < short.length; j++) {
+      if(short[j] !== long[i + j]) {
+        break;
+      }
+      if(j === short.length -1) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+*/
