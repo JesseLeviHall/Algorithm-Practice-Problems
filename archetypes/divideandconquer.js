@@ -21,7 +21,7 @@ function search(arr, val) {
 }
 
 //Refactor Solution: Log(N) - Binary Search
-function search(arr, val) {
+function search(array, val) {
   let min = 0;
   let max = array.length - 1;
 
