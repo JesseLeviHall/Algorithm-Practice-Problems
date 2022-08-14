@@ -5,10 +5,7 @@ Elementary sorting:
   generally O(n^2). If data is nearly sorted, can be super fast though. O(n)
  
 -selection sort
-  
-
-
-
+  Similar to bubble sort, but instead of first placing large values in to sorted position, it places small values into sorted position by swaping to the front with the smallest element found in every iteration. Can use same swap logic from bubble sort.  Generally O(n^2) with a nested loop.
 
 -insertion sort
 
