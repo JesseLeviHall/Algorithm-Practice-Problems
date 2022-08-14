@@ -18,7 +18,13 @@ ex: function numberCompare(num1, num2) {
   return num1 - num2;
 }
 
+Intermediate Sorting Algorithms:
+Good for larger sets (faster sorts). Average O(n log n)
+-Merge Sort
 
+-Quick Sort
+
+-Radix Sort
 
 
 */
