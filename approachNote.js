@@ -20,7 +20,7 @@ Nested loops are o(n^2)
 
 
 ------------------------------------------------------
-1. APPROACHING A PROBLEM:
+ APPROACHING A PROBLEM:
 algorithm: set of steps to accomplish a certain task.
 Devise a plan for solving the problem. 5 parts:
 - understand it
@@ -42,12 +42,6 @@ Devise a plan for solving the problem. 5 parts:
   can you do it differently / improve it?
   can you use this to solve another problem?
   what other approaches have you seen done mr. interviewer?
-
-2. ARCHETYPES OF ALGORITHMS:
-Identify the patterns and recipes
-- frequency counter
-  use an object to collect values and their frequency
-
 
 ----------------------------------------------------------
 */
