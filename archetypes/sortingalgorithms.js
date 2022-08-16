@@ -28,9 +28,8 @@ Good for larger sets (faster sorts) trade off for simplicity. Average O(n log n)
 -Quick Sort
   also exploits the fact that arrays of 0 or 1 are always sorted. works by selecting one element called the "pivot" and fining the index where the pivot should end up in the sorted array. Once the pivot is postioned appropraitely, quick sort can be applied on either side of the pivot.  Uses a helper function for arranging elements in an array on either isde of a pivot. The helper funcition should designate the pivot element, its refered to as the pivot helper.
 
-
-
 -Radix Sort
-
-
+  All above sorts are comparison sorts. compare 2 elements at a time. Needs to work with base 10 numbers, exploits the fact that the size of a number is encoded in the number of digits.
+  groupts numbers together based on value of integer from right to left. Helper function to get integers from each place and also to count number of digits in each number. 
+  O(nk) k = number of the digits in the numbers. 
 */
