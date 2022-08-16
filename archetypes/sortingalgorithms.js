@@ -26,7 +26,7 @@ Good for larger sets (faster sorts) trade off for simplicity. Average O(n log n)
   O(N log N) time complexity no matter the data.
 
 -Quick Sort
-  also exploits the fact that arrays of 0 or 1 are always sorted. works by selecting one element called the "pivot" and fining the index where the pivot should end up in the sorted array. Once the pivot is postioned appropraitely, quick sort can be applied on either side of the pivot.  Uses a helper function for arranging elements in an array on either isde of a pivot. The helper funcition should designate the pivot element. 
+  also exploits the fact that arrays of 0 or 1 are always sorted. works by selecting one element called the "pivot" and fining the index where the pivot should end up in the sorted array. Once the pivot is postioned appropraitely, quick sort can be applied on either side of the pivot.  Uses a helper function for arranging elements in an array on either isde of a pivot. The helper funcition should designate the pivot element, its refered to as the pivot helper.
 
 
 
