@@ -1,48 +1,47 @@
-function deepEqual(a,b) {
- if (a === b) return true;
-  
-  if (a == null || typeof a != "object" ||
-      b == null || typeof b != "object") return false;
+function deepEqual(a, b) {
+  if (a === b) return true;
 
-  let keysA = Object.keys(a), keysB = Object.keys(b);
+  if (a == null || typeof a != "object" || b == null || typeof b != "object")
+    return false;
+
+  let keysA = Object.keys(a),
+    keysB = Object.keys(b);
 
   if (keysA.length != keysB.length) return false;
 
   for (let key of keysA) {
     if (!keysB.includes(key) || !deepEqual(a[key], b[key])) return false;
   }
- return true;
+  return true;
 }
-
-console.log(deepEqual(
-
- {
-  name: 'lily', 
-  hobbies: 
-  [
-   { 
-     work: ['coding', 'reading']
-   }, 
-   {
-     home: ['chickens', 'painting', 'running', 'dogs']
+console.log(
+  deepEqual(
+    {
+      name: "lily",
+      hobbies: [
+        {
+          work: ["coding", "reading"],
+        },
+        {
+          home: ["chickens", "painting", "running", "dogs"],
+        },
+      ],
+    },
+    {
+      name: "lily",
+      hobbies: [
+        {
+          work: ["coding", "reading"],
+        },
+        {
+          home: ["chickens", "painting", "running", "dogs"],
+        },
+      ],
     }
-   ]
-   },  {
-    name: 'lily', 
-    hobbies: 
-    [
-     { 
-       work: ['coding', 'reading']
-     }, 
-     {
-       home: ['chickens', 'painting', 'running', 'dogs']
-      }
-     ]
-     }
-  
-     ))
+  )
+);
 
-     /* 
+/* 
  if (typeof val1 !== 'object' && typeof val2 !== 'object') {
   if (val1 !== val2) return false;
  }
