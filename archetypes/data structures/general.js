@@ -1,5 +1,5 @@
 /*
-ES 2015 class syntax is syntactical sugar.
+ES 2015 class syntax is syntactical sugar. syntax
 creating a new object must be called constructor.
 the class keyword creates a constant, so you can not redefine it.
 the syntax:
