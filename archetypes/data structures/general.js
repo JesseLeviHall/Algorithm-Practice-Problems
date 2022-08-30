@@ -17,7 +17,7 @@ class Student {
     return "enrolling students..."
   }
 }
-
+js
 -class defined the pattern, new creates the object.
 let firstStudent = new Student("Colt", "Steele");
 let secondStudent = new Student("blue", "Steele");
