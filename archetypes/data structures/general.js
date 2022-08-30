@@ -25,4 +25,5 @@ let secondStudent = new Student("blue", "Steele");
 Instance Methods: ex: markLate() method that acts on a single instance of the constructed object. 
 
 Class Methods: keyword 'static' ex: enrollStudents, define methods pertinent to classes rather than instance objects of the class.
+this refers to the instance
 */
