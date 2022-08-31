@@ -3,6 +3,7 @@ a data structure that contains a head tail and length property. Consists of node
 
 A singly linked list stores a node of data - val
 and a reference to the next node - next
+one linked element
 */
 
 class Node {
