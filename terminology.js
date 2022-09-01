@@ -23,8 +23,7 @@ General Terminology:
 
 - anonymous functions: arrow function
 
-- predicate: function that returns boolean true or false. often 
-  start with is. 
+- predicate: function that returns boolean true or false. often these start with is and runs a check. 
 
 - memoization: Cache the return value of a function. 
   const memoizedValue =  useMemo(() => computeExpensiveValue(a,b), [a,b]); Allows to recompute something without recalculating every value over again. 
