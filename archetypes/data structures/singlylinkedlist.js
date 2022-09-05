@@ -5,7 +5,7 @@ A singly linked list stores a node of data - val
 and a reference to the next node - next
 */
 
-//push model
+//push solution
 class Node {
   constructor(val) {
     this.val = val;
@@ -36,3 +36,5 @@ class SinglyLinkedList {
 var list = new SinglyLinkedList();
 list.push("Hello");
 list.push("goodbye");
+
+//the pop solution
