@@ -5,13 +5,14 @@ A singly linked list stores a node of data - val
 and a reference to the next node - next
 */
 
+//push model
 class Node {
   constructor(val) {
     this.val = val;
     this.next = null;
   }
 }
-
+//sinly linked list has pointer to head tail and length:
 class SinglyLinkedList {
   constructor() {
     this.head = null;
