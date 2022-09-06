@@ -38,5 +38,4 @@ list.push("Hello");
 list.push("goodbye");
 
 //the pop solution
-//there will be a few lines
-//next look
+//to create this data structure
