@@ -38,4 +38,5 @@ General Terminology:
   Destructuring 
   null coalescing
   polyfill
+  facade pattern
 */
