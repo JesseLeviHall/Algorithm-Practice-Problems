@@ -34,4 +34,6 @@ General Terminology:
 - serializtion: 
   ex: serialize data as a JSON string in order for a javascript app to send data to be understood by a python app. 
 
+
+  Destructuring 
 */
