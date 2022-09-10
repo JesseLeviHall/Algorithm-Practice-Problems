@@ -34,6 +34,19 @@ General Terminology:
 - serializtion: 
   ex: serialize data as a JSON string in order for a javascript app to send data to be understood by a python app. 
 
+- CPS =  continuation passing style
+  using the function to pass the data back but still operating synchronously
+
+  function hideString(str, done) {
+    done(str.replace(/[a-zA-Z]/g, "X"));
+  }
+
+  hideString("hello world", (hidden) => {
+    console.log(hidden);
+  });
+
+  console.log("end");
+
 
   Destructuring 
   null coalescing
