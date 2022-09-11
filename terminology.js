@@ -55,5 +55,5 @@ General Terminology:
 
   polyfill means to write code that adds a feature which the engine may lack. ex. polyfill for fetch api
 
-  facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+  facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. often used to hide the complexity of a system.
 */
