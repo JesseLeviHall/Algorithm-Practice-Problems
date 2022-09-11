@@ -48,8 +48,12 @@ General Terminology:
   console.log("end");
 
 
-  Destructuring 
-  null coalescing
-  polyfill
-  facade pattern
+  Destructuring means to break down a data structure into its   individual elements. usually an object or array.
+  
+  null coalescing means to check if a value is null or undefined and if so return a default value.
+
+
+  polyfill means to write code that adds a feature which the engine may lack. ex. polyfill for fetch api
+
+  facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
 */
