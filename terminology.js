@@ -65,5 +65,7 @@ General Terminology:
 
   async/await is a way to write asynchronous code that looks synchronous. ex. async function get3Pokemon() { const poke1 = await getPokemon(1); const poke2 = await getPokemon(2); const poke3 = await getPokemon(3); return [poke1, poke2, poke3]; }
 
+  optional chaining is a way to access nested properties without having to check if the parent property exists. ex. const name = user?.profile?.name;
+
   user.hobbies?.forEach(hobby => console.log(hobby.toUpperCase()));
 */
