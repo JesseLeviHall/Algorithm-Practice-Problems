@@ -64,5 +64,6 @@ General Terminology:
   function composition is a technique of combining simple functions to build more complex ones. ex. const add = (a, b) => a + b; const multiply = (a, b) => a * b; const addAndMultiply = (a, b, c) => multiply(add(a, b), c);
 
   async/await is a way to write asynchronous code that looks synchronous. ex. async function get3Pokemon() { const poke1 = await getPokemon(1); const poke2 = await getPokemon(2); const poke3 = await getPokemon(3); return [poke1, poke2, poke3]; }
-  
+
+  user.hobbies?.forEach(hobby => console.log(hobby.toUpperCase()));
 */
