@@ -59,4 +59,5 @@ General Terminology:
 
   currying is a technique of evaluating functions with multiple arguments, into a sequence of functions with a single argument.  ex. const add = (a) => (b) => a + b;
 
+  partial application is a technique of fixing a number of arguments to a function, producing another function of smaller arguments. ex. const add = (a, b) => a + b; const add5 = add.bind(null, 5);
 */
