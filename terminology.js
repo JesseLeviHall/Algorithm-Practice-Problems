@@ -56,4 +56,7 @@ General Terminology:
   polyfill means to write code that adds a feature which the engine may lack. ex. polyfill for fetch api
 
   facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. often used to hide the complexity of a system.
+
+  currying is a technique of evaluating functions with multiple arguments, into a sequence of functions with a single argument.  ex. const add = (a) => (b) => a + b;
+
 */
