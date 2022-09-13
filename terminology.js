@@ -70,4 +70,6 @@ General Terminology:
   user.hobbies?.forEach(hobby => console.log(hobby.toUpperCase()));
 
   polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively. ex. polyfill for fetch api
+
+  public private and protected are access modifiers. public is the default. private is only accessible within the class. protected is only accessible within the class and subclasses.
 */
