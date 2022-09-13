@@ -72,4 +72,8 @@ General Terminology:
   polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively. ex. polyfill for fetch api
 
   public private and protected are access modifiers. public is the default. private is only accessible within the class. protected is only accessible within the class and subclasses.
+
+  coupling is how closely related two things are. ex. a class and its methods are highly coupled. a class and its data are loosely coupled.
+
+  cohesion is how closely related the responsibilities of a class are. ex. a class that handles user authentication and user profiles is highly cohesive. a class that handles user authentication, user profiles, and user billing is not cohesive.
 */
