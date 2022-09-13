@@ -68,4 +68,6 @@ General Terminology:
   optional chaining is a way to access nested properties without having to check if the parent property exists. ex. const name = user?.profile?.name;
 
   user.hobbies?.forEach(hobby => console.log(hobby.toUpperCase()));
+
+  polyfill is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively. ex. polyfill for fetch api
 */
