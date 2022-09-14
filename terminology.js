@@ -79,5 +79,7 @@ General Terminology:
 
   gaurd clauses are a way to exit a function early. ex. function doSomething(input) { if (input === null) { return; } // do something with input }
 
+  facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. often used to hide the complexity of a system.
+
   
 */
