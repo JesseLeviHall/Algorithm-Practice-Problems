@@ -81,5 +81,5 @@ General Terminology:
 
   facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. often used to hide the complexity of a system.
 
-  
+  composition vs inheritance is a way to reuse code. composition is when you use objects to compose new functionality. inheritance is when you use classes to inherit functionality from a parent class.
 */
