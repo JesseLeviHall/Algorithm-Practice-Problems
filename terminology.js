@@ -76,4 +76,8 @@ General Terminology:
   coupling is how closely related two things are. ex. a class and its methods are highly coupled. a class and its data are loosely coupled.
 
   cohesion is how closely related the responsibilities of a class are. ex. a class that handles user authentication and user profiles is highly cohesive. a class that handles user authentication, user profiles, and user billing is not cohesive.
+
+  gaurd clauses are a way to exit a function early. ex. function doSomething(input) { if (input === null) { return; } // do something with input }
+
+  
 */
