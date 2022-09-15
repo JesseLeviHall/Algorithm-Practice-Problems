@@ -49,6 +49,8 @@ General Terminology:
 
 
   Destructuring means to break down a data structure into its   individual elements. usually an object or array.
+
+  spread and rest operators are useful to clone objects and arrays and modify a property or add a property to an object or array.
   
   null coalescing means to check if a value is null or undefined and if so return a default value.
 
@@ -82,4 +84,6 @@ General Terminology:
   facade pattern is a design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes. often used to hide the complexity of a system.
 
   composition vs inheritance is a way to reuse code. composition is when you use objects to compose new functionality. inheritance is when you use classes to inherit functionality from a parent class.
+
+
 */
