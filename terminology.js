@@ -52,7 +52,7 @@ General Terminology:
 
   spread and rest operators are useful to clone objects and arrays and modify a property or add a property to an object or array.
   
-  null coalescing means to check if a value is null or undefined and if so return a default value.
+  null coalescing means to check if a value is null or undefined and if so return a default value. ex: const foo = null ?? "default string";
 
 
   polyfill means to write code that adds a feature which the engine may lack. ex. polyfill for fetch api
