@@ -92,6 +92,7 @@ console.log(
 );
   */
 
-const sym = Symbol("name");
+//const sym = Symbol("name");
 //a symbol is always unique forever.  Allows you to create a private variable on an object that wont clash with other properties on the object and will be mostly invisible to the outside world. accessible by getOwnPropertySymbols() and Object.getOwnPropertySymbols(). symbol.for() will return the same symbol if it already exists. symbol.keyFor() will return the name of the symbol.
-console.log(sym);
+
+//a generator function is a function that can be paused and resumed. It is denoted by the * after the function keyword. A generator function returns a generator object. A generator object is an iterator. A generator object has a next() method that returns an object with a value and done property. The value property is the value of the yield expression. The done property is a boolean that is true when the generator function has finished. A generator function can be paused and resumed with the yield keyword. The yield keyword can be used to return a value from the generator function. The yield keyword can also be used to pause the generator function. The yield keyword can be used to pass a value into the generator function. The yield keyword can be used to pause the generator function and pass a value into the generator function.
