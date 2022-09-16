@@ -71,3 +71,27 @@ function getItemsMap(id) {
 }
 
 console.log(getItemsMap(2)); */
+
+//WeakMap is a special kind of Map that does not prevent JavaScript from removing its items from memory. WeakMap has only the following methods: get, set, delete, has. WeakMap does not support iteration and methods keys(), values(), entries(), so there’s no way to get all keys or values from it.
+
+/* const set = new Set([
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+]);
+/* console.log(set.size);
+console.log(set.has(8));
+set.forEach((value) => console.log(value)); */
+
+/* function removeDups(array) {
+  return [...new Set(array)];
+}
+
+console.log(
+  removeDups([
+    1, 2, 2, 2, 3, 4, 4, 5, 5, 6, 6, 67, 67, 56, 5, 5, 4, 4, 4, 4, 5, 6,
+  ])
+);
+  */
+
+const sym = Symbol("name");
+//a symbol is always unique forever.  Allows you to create a private variable on an object that wont clash with other properties on the object and will be mostly invisible to the outside world. accessible by getOwnPropertySymbols() and Object.getOwnPropertySymbols(). symbol.for() will return the same symbol if it already exists. symbol.keyFor() will return the name of the symbol.
+console.log(sym);
