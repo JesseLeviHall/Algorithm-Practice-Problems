@@ -166,3 +166,29 @@ console.log(sum.apply(null, [1, 2]));
 console.log(sum.call(null, 1, 2));
 console.log(sum(...numbersToAdd));
  */
+
+// currying is used to create a new function from an existing function with some preset arguments and the ability to pass in additional arguments and set the value of this.
+
+//***********************OBJECT ORIENTED***********
+// PROTOTYPES
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+//add a funciton to the prototype of the Person object:
+Person.prototype.sayName = function () {
+  console.log(this.name);
+};
+
+Person.printHi = function () {
+  console.log("hi");
+};
+
+const person = new Person("John", 25);
+console.log(person);
+person.sayName();
+console.log(Object.getPrototypeOf(person));
+Person.printHi();
+
+//inheritance is when an object is based on another object. The child object inherits properties and methods from the parent object. The child object can override properties and methods from the parent object. The child object can add new properties and methods. The child object can call methods from the parent object.
