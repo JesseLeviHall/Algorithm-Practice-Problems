@@ -96,3 +96,73 @@ console.log(
 //a symbol is always unique forever.  Allows you to create a private variable on an object that wont clash with other properties on the object and will be mostly invisible to the outside world. accessible by getOwnPropertySymbols() and Object.getOwnPropertySymbols(). symbol.for() will return the same symbol if it already exists. symbol.keyFor() will return the name of the symbol.
 
 //a generator function is a function that can be paused and resumed. It is denoted by the * after the function keyword. A generator function returns a generator object. A generator object is an iterator. A generator object has a next() method that returns an object with a value and done property. The value property is the value of the yield expression. The done property is a boolean that is true when the generator function has finished. A generator function can be paused and resumed with the yield keyword. The yield keyword can be used to return a value from the generator function. The yield keyword can also be used to pause the generator function. The yield keyword can be used to pass a value into the generator function. The yield keyword can be used to pause the generator function and pass a value into the generator function.
+
+//object getters and setters : getter cannot take any arguments. setter can take one argument. getters and setters are used to control access to an object. getters and setters are used to validate data. getters and setters are used to perform an action on a property when it is read or written.
+/* const user = {
+  _username: "test",
+  firstName: "John",
+  lastName: "Doe",
+  get username() {
+    return this._username;
+  },
+  set username(value) {
+    if (value.length > 3) {
+      this._username = value;
+    } else {
+      console.log("error");
+    }
+  },
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  set fullName(value) {
+    [this.firstName, this.lastName] = value.split(" ");
+  },
+};
+
+user.fullName = "John Doe";
+console.log(user);
+
+const person = {
+  age: 25,
+  get yearOfBirth() {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.age;
+  },
+};
+console.log(person.yearOfBirth); */
+
+//binding allows you to change the value of this. bind() can be used to bind a function to a specific object and set the value of this and pass in arguments and set the value of this.
+/* 
+function sum(a, b) {
+  return a + b;
+}
+
+function sumTwo(a, b) {
+  return sum.bind(null, 2);
+} */
+
+//call() and apply() can be used to call a function and set the value of this. call() and apply() can be used to pass in arguments and set the value of this.
+
+/* const person = {
+  name: "John Doe",
+};
+
+function sayName() {
+  console.log(this.name);
+}
+sayName.apply(person);
+
+sayName.call(person); */
+
+/* const numbersToAdd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function sum(...numbers) {
+  return numbers.reduce((count, number) => count + number);
+}
+
+console.log(sum.apply(null, numbersToAdd));
+console.log(sum.apply(null, [1, 2]));
+console.log(sum.call(null, 1, 2));
+console.log(sum(...numbersToAdd));
+ */
