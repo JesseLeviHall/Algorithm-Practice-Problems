@@ -171,13 +171,13 @@ console.log(sum(...numbersToAdd));
 
 //***********************OBJECT ORIENTED***********
 // PROTOTYPES
-function Person(name, age) {
+/* function Person(name, age) {
   this.name = name;
   this.age = age;
-}
+} */
 
 //add a funciton to the prototype of the Person object:
-Person.prototype.sayName = function () {
+/* Person.prototype.sayName = function () {
   console.log(this.name);
 };
 
@@ -189,6 +189,132 @@ const person = new Person("John", 25);
 console.log(person);
 person.sayName();
 console.log(Object.getPrototypeOf(person));
-Person.printHi();
+Person.printHi(); */
 
 //inheritance is when an object is based on another object. The child object inherits properties and methods from the parent object. The child object can override properties and methods from the parent object. The child object can add new properties and methods. The child object can call methods from the parent object.
+
+/* class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  static printHi() {
+    console.log("hi");
+  }
+  static goodName = "Mr. John";
+  sayName() {
+    console.log(this.goodName);
+  }
+}
+
+const person = new Person("John", 25);
+console.log(Person.printHi()); */
+
+//the static keyword is new, they are only available on the class itself, not on the instances of the class. static methods are used to create utility functions for a class. static properties are used to define class level properties.
+
+//A static value is something that you must call directly on the class. Something like Promise.resolve, or Math.random.
+
+// prototype constructor:
+/* function createUser(email, password, language) {
+  this.email = email;
+  this.password = password;
+  this.language = language;
+}
+
+createUser.prototype.printPassword = function () {
+  console.log(this.password);
+};
+const user = new createUser("test@test.com, test, en");
+console.log(user); */
+
+//class constructor:
+/* class User {
+  constructor(email, password, language) {
+    this.email = email;
+    this.password = password;
+    this.language = language;
+  }
+  get name() {
+    return this.email.split("@")[0];
+  }
+  set name(value) {
+    const [, suffix] = this.email.split("@");
+    this.email = value + "@" + suffix;
+  }
+
+  printPassword() {
+    console.log(this.password);
+  }
+}
+const user = new User("test@test.com", "test", " en");
+user.name = "Jesse";
+console.log(user); */
+/* 
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, owner) {
+    super(name);
+    //super() is used to call the constructor of the parent class.
+    this.owner = owner;
+  }
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+class Cat extends Animal {
+  //if you don't have a constructor, the extended constructor is used.
+  speak() {
+    console.log(`${this.name} meows.`);
+  }
+}
+
+const dog = new Dog("Rex");
+dog.speak();
+
+ */
+/* 
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Janitor extends Person {
+  constructor(name, numberOfMops) {
+    super(name);
+    this.numberOfMops = numberOfMops;
+  }
+
+  _cleaningPoductCount = 0;
+
+  set cleaningPoductCount(value) {
+    if (value <= 1) {
+      throw new Error("Negative cleaning products");
+    }
+    this._cleaningPoductCount = value;
+  }
+
+  clean() {
+    this.#helperFunction();
+    console.log(
+      `The Janitor Cleaned with ${this.numberOfMops} mops and ${this._cleaningPoductCount} cleaning products`
+    );
+  }
+  #helperFunction() {
+    console.log("helper function");
+  }
+}
+
+const janitor = new Janitor("Joey", 2);
+janitor.clean(); */
+
+//In a class the private variables are defined with the # symbol. Private variables are only available inside the class. Private variables are not available in the instances of the class. Private variables are not available in the child classes either.  Typically, _ is used to signify private variables also.
