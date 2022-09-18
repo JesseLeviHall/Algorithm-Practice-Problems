@@ -454,7 +454,7 @@ console.log(array.map(doubleAndAddOne)); */
 
 //the purpose of function composition is to make the code more testable, readable and easier to understand.
 
-//currying is the process of transforming a function that takes multiple arguments into a function that takes them one at a time.
+//currying is the process of transforming a function that takes multiple arguments into a function that takes them one at a time. the purpose is to make the function more flexible.
 /* rather than:
 function sum( a, b, c) {
   return a + b + c;
@@ -468,7 +468,6 @@ function sum(a) {
   };
 }
 console.log(sum(1)(2)(3));
-
 
 //use bind to curry a function:
 console.log(sum.bind(null, 1)(2)(3));*/
