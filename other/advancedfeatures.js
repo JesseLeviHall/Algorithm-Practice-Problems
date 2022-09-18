@@ -336,7 +336,7 @@ function addElement(array, element) {
 console.log(addElement(array, 6)); */
 
 //this is not a pure function:
-const person = {
+/* const person = {
   name: "John",
   friends: ["Sally", "Bob"],
 };
@@ -344,13 +344,39 @@ const person = {
 function addFriend(friend) {
   person.friends.push(friend);
   return person;
-}
+} */
 
 //this is a pure function: the spread operator is used to create a new object and not mutate the original object.
-function addFriendPure(person, friend) {
+/* function addFriendPure(person, friend) {
   return {
     ...person,
     friends: [...person.friends, friend],
   };
 }
 console.log(addFriendPure("Jesse"));
+ */
+
+//imutable object:
+/* const person = object.freeze({
+  name: "John", //imutable
+  friends: ["Sally", "Bob"], //mutable because freeze in only one level deep
+  address: {
+    street: "123 Main St",
+  },
+});
+
+function deepFreeze(object) {
+  Object.values(object).forEach((value) => {
+    if (value && typeof value === "object") {
+      deepFreeze(value);
+    }
+  });
+  return Object.freeze(object);
+}
+ */
+//copy and freeze:
+/* const newPerson = deepFreeze({
+  ...person,
+  address: { ...person.address, street: "456 Main St" },
+});
+ */
