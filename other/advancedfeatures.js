@@ -170,6 +170,8 @@ console.log(sum(...numbersToAdd));
 // currying is used to create a new function from an existing function with some preset arguments and the ability to pass in additional arguments and set the value of this.
 
 //***********************OBJECT ORIENTED***********
+//object oriented programming is geared towards taking concepts and functionality that is related to a single or model and putting it all together in a class or classes.  Then have a bunch of different classes that can interact with eachother.
+
 // PROTOTYPES
 /* function Person(name, age) {
   this.name = name;
@@ -318,3 +320,16 @@ const janitor = new Janitor("Joey", 2);
 janitor.clean(); */
 
 //In a class the private variables are defined with the # symbol. Private variables are only available inside the class. Private variables are not available in the instances of the class. Private variables are not available in the child classes either.  Typically, _ is used to signify private variables also.
+
+//***********************FUNCTIONAL PROGRAMING*******
+//functional programming is geared toward making the least amount of changes and mutations possible either by using immutable data structures or by using pure functions.
+
+//A pure function does not mutate data, it does not have side effects, and it always returns the same output given the same input.
+
+const array = [1, 2, 3, 4, 5];
+const TAXES = 1.2;
+//this is a pure function:
+function addElement(array, element) {
+  return [...array, element, TAXES];
+}
+console.log(addElement(array, 6));
