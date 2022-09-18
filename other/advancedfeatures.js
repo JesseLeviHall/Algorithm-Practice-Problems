@@ -326,10 +326,31 @@ janitor.clean(); */
 
 //A pure function does not mutate data, it does not have side effects, and it always returns the same output given the same input.
 
-const array = [1, 2, 3, 4, 5];
-const TAXES = 1.2;
 //this is a pure function:
+/* const array = [1, 2, 3, 4, 5];
+const TAXES = 1.2;
+
 function addElement(array, element) {
   return [...array, element, TAXES];
 }
-console.log(addElement(array, 6));
+console.log(addElement(array, 6)); */
+
+//this is not a pure function:
+const person = {
+  name: "John",
+  friends: ["Sally", "Bob"],
+};
+
+function addFriend(friend) {
+  person.friends.push(friend);
+  return person;
+}
+
+//this is a pure function: the spread operator is used to create a new object and not mutate the original object.
+function addFriendPure(person, friend) {
+  return {
+    ...person,
+    friends: [...person.friends, friend],
+  };
+}
+console.log(addFriendPure("Jesse"));
