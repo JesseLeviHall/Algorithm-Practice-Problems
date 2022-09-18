@@ -380,3 +380,72 @@ function deepFreeze(object) {
   address: { ...person.address, street: "456 Main St" },
 });
  */
+
+//a higher order function is a function that takes a function as an argument or returns a function.
+
+/* const array = [1, 2, 3, 4, 5];
+
+const newArray = everyOtherMap(array, (element) => element * 2);
+
+console.log(newArray);
+
+function everyOtherMap(a, func) {
+  return a.map((element, index) => {
+    if (index % 2 === 0) {
+      return func(element);
+    }
+    return element;
+  });
+}
+ */
+
+/* const people = [
+  {
+    name: "John",
+    friends: ["Sally", "Bob"],
+  },
+  {
+    name: "Sally",
+    friends: ["John", "Bob"],
+  },
+  {
+    name: "Bob",
+    friends: ["John"],
+  },
+];
+
+const results = groupBy(people, (person) => person.friends.length);
+
+console.log(results);
+
+function groupBy(array, func) {
+  return array.reduce((accumulator, element) => {
+    const key = func(element);
+    if (accumulator[key] == null) {
+      accumulator[key] = [];
+    }
+    accumulator[key].push(element);
+    return accumulator;
+  }, {});
+}
+ */
+
+//function composition is the process of combining multiple functions to produce a new function. The new function is the composition of the original functions.
+
+const array = [1, 2, 3, 4, 5];
+
+function double(element) {
+  return element * 2;
+}
+
+function addOne(element) {
+  return element + 1;
+}
+
+console.log(array.map(double).map(addOne));
+
+//the above is the same as:
+function doubleAndAddOne(element) {
+  return addOne(double(element));
+}
+console.log(array.map(doubleAndAddOne));
