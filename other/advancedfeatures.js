@@ -432,7 +432,7 @@ function groupBy(array, func) {
 
 //function composition is the process of combining multiple functions to produce a new function. The new function is the composition of the original functions.
 
-const array = [1, 2, 3, 4, 5];
+/* const array = [1, 2, 3, 4, 5];
 
 function double(element) {
   return element * 2;
@@ -444,8 +444,31 @@ function addOne(element) {
 
 console.log(array.map(double).map(addOne));
 
-//the above is the same as:
+//the above is composed as:
 function doubleAndAddOne(element) {
   return addOne(double(element));
 }
-console.log(array.map(doubleAndAddOne));
+console.log(array.map(doubleAndAddOne)); */
+
+//Lodash is a library with compose and flow functions that can be used to compose functions for you.
+
+//the purpose of function composition is to make the code more testable, readable and easier to understand.
+
+//currying is the process of transforming a function that takes multiple arguments into a function that takes them one at a time.
+/* rather than:
+function sum( a, b, c) {
+  return a + b + c;
+}
+this is curried:
+function sum(a) {
+  return (b) => {
+    return (c) => {
+      return a + b + c;
+    };
+  };
+}
+console.log(sum(1)(2)(3));
+
+
+//use bind to curry a function:
+console.log(sum.bind(null, 1)(2)(3));*/
