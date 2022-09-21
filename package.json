@@ -5,7 +5,7 @@
   "main": "leetcode.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "jesttest": "jest"
+    "jesttest": "jest --coverage"
   },
   "author": "Jesse_Hall",
   "license": "ISC",
