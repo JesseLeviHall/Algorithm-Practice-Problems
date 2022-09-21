@@ -471,3 +471,5 @@ console.log(sum(1)(2)(3));
 
 //use bind to curry a function:
 console.log(sum.bind(null, 1)(2)(3));*/
+
+//unit testing is when you test a function to make sure it works as expected.
