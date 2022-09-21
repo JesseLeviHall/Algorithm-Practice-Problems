@@ -4,9 +4,13 @@
   "description": "",
   "main": "leetcode.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "jesttest": "jest"
   },
   "author": "Jesse_Hall",
-  "license": "ISC"
-
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.0.3",
+    "jest": "^29.0.3"
+  }
 }
