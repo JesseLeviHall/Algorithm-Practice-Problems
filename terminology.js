@@ -89,4 +89,6 @@ General Terminology:
   /concurrency is when two or more tasks can start, run, and complete in overlapping time periods.
 
   //parallelism is when tasks literally run at the same time, e.g., on multi-core processors.
+
+  //the observer pattern in node is event driven architecture. The event loop is the observer. The callback queue is the subject.
 */
