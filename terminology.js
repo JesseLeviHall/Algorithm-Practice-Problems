@@ -85,4 +85,6 @@ General Terminology:
 
   composition vs inheritance is a way to reuse code. composition is when you use objects to compose new functionality. inheritance is when you use classes to inherit functionality from a parent class.
 
+
+  /concurrency is when two or more tasks can start, run, and complete in overlapping time periods.
 */
