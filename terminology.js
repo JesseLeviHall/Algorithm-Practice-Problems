@@ -93,4 +93,6 @@ General Terminology:
   //the observer pattern in node is event driven architecture. The event loop is the observer. The callback queue is the subject.
 
   es6 modules are a way to import and export code. ex. import { add } from './math.js'; export const add = (a, b) => a + b;
+
+  common js modules are a way to import and export code. ex. const { add } = require('./math.js'); module.exports = { add };
 */
