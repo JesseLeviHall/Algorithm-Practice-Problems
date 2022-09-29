@@ -91,4 +91,6 @@ General Terminology:
   //parallelism is when tasks literally run at the same time, e.g., on multi-core processors.
 
   //the observer pattern in node is event driven architecture. The event loop is the observer. The callback queue is the subject.
+
+  es6 modules are a way to import and export code. ex. import { add } from './math.js'; export const add = (a, b) => a + b;
 */
