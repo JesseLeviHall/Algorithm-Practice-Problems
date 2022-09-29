@@ -95,4 +95,6 @@ General Terminology:
   es6 modules are a way to import and export code. ex. import { add } from './math.js'; export const add = (a, b) => a + b;
 
   common js modules are a way to import and export code. ex. const { add } = require('./math.js'); module.exports = { add };
+
+  //rqequirejs is a module loader. it is used to load modules asynchronously.
 */
