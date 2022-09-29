@@ -99,4 +99,6 @@ General Terminology:
   //rqequirejs is a module loader. it is used to load modules asynchronously.
 
   //index.js may cause unintended side effects. ex. import './index.js'; import { add } from './math.js'; console.log(add(16, 26)); // 42
+
+  //internals are private variables and functions. ex. const _radius = new WeakMap(); class Circle { constructor(radius) { _radius.set(this, radius); } draw() { console.log('Circle with radius ' + _radius.get(this)); } }
 */
