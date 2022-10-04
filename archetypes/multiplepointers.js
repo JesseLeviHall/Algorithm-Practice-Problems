@@ -5,7 +5,7 @@ usually we are looking for a pair, by starting at the ends and working towards t
 */
 
 /* 
-Write a funciton called sumZero which accepts a sorted array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pai does not exist. 
+Write a funciton called sumZero which accepts a sorted array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pair does not exist. 
 */
 
 //Naive Solution: time O(N^2)

@@ -96,7 +96,6 @@ General Terminology:
 
   common js modules are a way to import and export code. ex. const { add } = require('./math.js'); module.exports = { add };
 
-  //rqequirejs is a module loader. it is used to load modules asynchronously.
 
   //index.js may cause unintended side effects. ex. import './index.js'; import { add } from './math.js'; console.log(add(16, 26)); // 42
 
